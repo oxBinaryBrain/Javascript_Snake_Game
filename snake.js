@@ -30,3 +30,13 @@ const DOWN_KEY = 40;
 var x = new Array(ALL_DOTS);
 var y = new Array(ALL_DOTS);   
 
+function init() {
+    
+    canvas = document.getElementById('myCanvas');
+    ctx = canvas.getContext('2d');
+
+    loadImages();
+    createSnake();
+    locateApple();
+    setTimeout("gameCycle()", DELAY);
+}    
