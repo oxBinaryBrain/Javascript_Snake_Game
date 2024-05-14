@@ -40,3 +40,24 @@ function init() {
     locateApple();
     setTimeout("gameCycle()", DELAY);
 }    
+function loadImages() {
+    
+    head = new Image();
+    head.src = 'head.png';    
+    
+    ball = new Image();
+    ball.src = 'dot.png'; 
+    
+    apple = new Image();
+    apple.src = 'apple.png'; 
+}
+
+function createSnake() {
+
+    dots = 3;
+
+    for (var z = 0; z < dots; z++) {
+        x[z] = 50 - z * 10;
+        y[z] = 50;
+    }
+}
